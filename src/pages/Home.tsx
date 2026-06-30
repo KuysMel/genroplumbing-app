@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 import emailjs from '@emailjs/browser';
 import { Home as HomeIcon, Menu, X } from 'lucide-react';
 import { serviceDetails } from '../data/services';
@@ -119,9 +120,9 @@ export default function Home() {
     <>
       {/* HEADER */}
       <header>
-        <a href="/" className="logo" aria-label="Go to homepage">
+        <Link to="/" className="logo" aria-label="Go to homepage">
           <img src={assetPath('logo.png')} alt="Genro Malabanan" className="logo-img" />
-        </a>
+        </Link>
 
         <nav className="desktop-nav">
           {navLinks.map((link) => (
@@ -158,10 +159,10 @@ export default function Home() {
           </button>
         </div>
 
-        <a href="/" className="mobile-exit-link" onClick={() => setIsMobileMenuOpen(false)}>
+        <Link to="/" className="mobile-exit-link" onClick={() => setIsMobileMenuOpen(false)}>
           <HomeIcon size={20} />
           Exit to Home
-        </a>
+        </Link>
 
         <nav className="mobile-nav">
           {navLinks.map((link) => (
@@ -237,7 +238,7 @@ export default function Home() {
 
         <div className="services">
           {serviceDetails.map((service) => (
-            <a key={service.slug} href={`/${service.slug}`} className="card service-card-link">
+            <Link key={service.slug} to={`/${service.slug}`} className="card service-card-link">
               <img src={service.image} alt={service.title} />
 
               <div className="card-content">
@@ -245,7 +246,7 @@ export default function Home() {
                 <p>{service.summary}</p>
                 <span>Learn More</span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -606,11 +607,11 @@ export default function Home() {
 
         <div className="location-link-grid">
           {locationDetails.map((location) => (
-            <a key={location.slug} href={`/${location.slug}`} className="location-link-card">
+            <Link key={location.slug} to={`/${location.slug}`} className="location-link-card">
               <span>{location.region}</span>
               <strong>{location.city}</strong>
               <p>Malabanan services, septic siphoning, declogging, and emergency plumbing.</p>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

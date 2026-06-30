@@ -18,7 +18,7 @@ export default function ServiceDetail() {
           <h1>{service.title}</h1>
           <p>{service.summary}</p>
           <div className="service-actions">
-            <a href="/#booking" className="btn">Book Service Now</a>
+            <Link to="/#booking" className="btn">Book Service Now</Link>
             <a href="tel:09354946745" className="service-call-link">
               <PhoneCall size={18} />
               0935-494-6745
