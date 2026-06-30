@@ -1,3 +1,5 @@
+import { assetPath } from '../lib/assets';
+
 export type LocationDetail = {
   slug: string;
   title: string;
@@ -15,7 +17,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'San Pedro',
     region: 'Laguna',
     summary: 'GENRO provides septic tank siphoning, declogging, drain cleaning, and emergency plumbing services in San Pedro, Laguna.',
-    image: '/images/san-pedro-malabanan-service.jpg',
+    image: assetPath('images/san-pedro-malabanan-service.jpg'),
     nearbyAreas: ['Pacita', 'Landayan', 'San Vicente', 'Calendola'],
   },
   {
@@ -24,7 +26,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Binan',
     region: 'Laguna',
     summary: 'Book GENRO for trusted Malabanan siphoning, sewer line cleaning, and plumbing repair services in Binan, Laguna.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Canlalay', 'San Antonio', 'Mamplasan', 'Sto. Tomas'],
   },
   {
@@ -33,7 +35,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Santa Rosa',
     region: 'Laguna',
     summary: 'GENRO serves Santa Rosa homes and businesses with septic siphoning, grease trap cleaning, declogging, and leak repair.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Balibago', 'Pulong Santa Cruz', 'Dila', 'Tagapo'],
   },
   {
@@ -42,7 +44,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Las Pinas',
     region: 'Metro Manila',
     summary: 'Fast Malabanan and plumbing support for Las Pinas, including clogged drains, septic tanks, sewer lines, and leaks.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Almanza', 'Pilar', 'Talon', 'Pamplona'],
   },
   {
@@ -51,7 +53,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Muntinlupa',
     region: 'Metro Manila',
     summary: 'GENRO handles septic tank siphoning, emergency plumbing, water leak repair, and sewer line cleaning in Muntinlupa.',
-    image: '/images/declogging-service-laguna.jpg',
+    image: assetPath('images/declogging-service-laguna.jpg'),
     nearbyAreas: ['Alabang', 'Sucat', 'Tunasan', 'Bayanan'],
   },
   {
@@ -60,7 +62,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Paranaque',
     region: 'Metro Manila',
     summary: 'Reliable Malabanan services in Paranaque for septic tanks, grease traps, clogged drains, and plumbing emergencies.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['BF Homes', 'Don Bosco', 'Moonwalk', 'San Antonio'],
   },
   {
@@ -69,7 +71,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Bacoor',
     region: 'Cavite',
     summary: 'GENRO provides Malabanan siphoning, drain cleaning, pipeline repair, and emergency plumbing services in Bacoor.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Molino', 'Talaba', 'Habayan', 'Zapote'],
   },
   {
@@ -78,7 +80,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Manila',
     region: 'Metro Manila',
     summary: 'GENRO provides septic tank siphoning, declogging, sewer line cleaning, and emergency plumbing services in Manila.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Tondo', 'Sampaloc', 'Ermita', 'Malate'],
   },
   {
@@ -87,7 +89,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Quezon City',
     region: 'Metro Manila',
     summary: 'Book GENRO for Malabanan siphoning, drain cleaning, leak repair, and plumbing services in Quezon City.',
-    image: '/images/declogging-service-laguna.jpg',
+    image: assetPath('images/declogging-service-laguna.jpg'),
     nearbyAreas: ['Cubao', 'Commonwealth', 'Fairview', 'Novaliches'],
   },
   {
@@ -96,7 +98,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Makati',
     region: 'Metro Manila',
     summary: 'GENRO serves Makati homes, offices, restaurants, and buildings with reliable Malabanan and plumbing services.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Poblacion', 'San Antonio', 'Bel-Air', 'Bangkal'],
   },
   {
@@ -105,7 +107,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Pasay',
     region: 'Metro Manila',
     summary: 'Fast septic tank siphoning, clogged drain clearing, and emergency plumbing support for Pasay properties.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Malibay', 'Cartimar', 'Villamor', 'San Rafael'],
   },
   {
@@ -114,7 +116,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Pasig',
     region: 'Metro Manila',
     summary: 'GENRO handles septic cleaning, sewer line cleaning, grease trap cleaning, and leak repair services in Pasig.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Ortigas Center', 'Kapitolyo', 'Rosario', 'Caniogan'],
   },
   {
@@ -123,7 +125,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Taguig',
     region: 'Metro Manila',
     summary: 'GENRO provides dependable Malabanan siphoning, drain cleaning, and emergency plumbing in Taguig.',
-    image: '/images/declogging-service-laguna.jpg',
+    image: assetPath('images/declogging-service-laguna.jpg'),
     nearbyAreas: ['BGC', 'Ususan', 'Pinagsama', 'Lower Bicutan'],
   },
   {
@@ -132,7 +134,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Mandaluyong',
     region: 'Metro Manila',
     summary: 'Call GENRO for septic tank siphoning, plumbing repair, declogging, and sewer cleaning in Mandaluyong.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Plainview', 'Hulo', 'Barangka', 'Highway Hills'],
   },
   {
@@ -141,7 +143,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'San Juan',
     region: 'Metro Manila',
     summary: 'GENRO provides Malabanan services, clogged drain support, and water leak repair for San Juan properties.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Greenhills', 'Addition Hills', 'Balong-Bato', 'Corazon de Jesus'],
   },
   {
@@ -150,7 +152,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Marikina',
     region: 'Metro Manila',
     summary: 'Reliable septic siphoning, declogging, drain cleaning, and plumbing repair services across Marikina.',
-    image: '/images/declogging-service-laguna.jpg',
+    image: assetPath('images/declogging-service-laguna.jpg'),
     nearbyAreas: ['Concepcion', 'Parang', 'Nangka', 'Sto. Nino'],
   },
   {
@@ -159,7 +161,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Paranaque',
     region: 'Metro Manila',
     summary: 'Reliable Malabanan services in Paranaque for septic tanks, grease traps, clogged drains, and plumbing emergencies.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['BF Homes', 'Don Bosco', 'Moonwalk', 'San Antonio'],
   },
   {
@@ -168,7 +170,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Las Pinas',
     region: 'Metro Manila',
     summary: 'Fast Malabanan and plumbing support for Las Pinas, including clogged drains, septic tanks, sewer lines, and leaks.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Almanza', 'Pilar', 'Talon', 'Pamplona'],
   },
   {
@@ -177,7 +179,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Muntinlupa',
     region: 'Metro Manila',
     summary: 'GENRO handles septic tank siphoning, emergency plumbing, water leak repair, and sewer line cleaning in Muntinlupa.',
-    image: '/images/declogging-service-laguna.jpg',
+    image: assetPath('images/declogging-service-laguna.jpg'),
     nearbyAreas: ['Alabang', 'Sucat', 'Tunasan', 'Bayanan'],
   },
   {
@@ -186,7 +188,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Navotas',
     region: 'Metro Manila',
     summary: 'GENRO provides septic tank siphoning, sewer line cleaning, declogging, and plumbing repair services in Navotas.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['North Bay Boulevard', 'Bangkulasi', 'San Jose', 'Tangos'],
   },
   {
@@ -195,7 +197,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Malabon',
     region: 'Metro Manila',
     summary: 'Book GENRO for Malabanan septic cleaning, drain clearing, and emergency plumbing services in Malabon.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Tonsuya', 'Concepcion', 'Dampalit', 'Potrero'],
   },
   {
@@ -204,7 +206,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Caloocan',
     region: 'Metro Manila',
     summary: 'GENRO supports Caloocan with septic tank siphoning, declogging, water leak repair, and pipeline services.',
-    image: '/images/declogging-service-laguna.jpg',
+    image: assetPath('images/declogging-service-laguna.jpg'),
     nearbyAreas: ['Bagong Silang', 'Grace Park', 'Deparo', 'Monumento'],
   },
   {
@@ -213,7 +215,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Valenzuela',
     region: 'Metro Manila',
     summary: 'Reliable Malabanan and plumbing services in Valenzuela, including septic cleaning and clogged drain clearing.',
-    image: '/images/laguna-plumbing-service.jpg',
+    image: assetPath('images/laguna-plumbing-service.jpg'),
     nearbyAreas: ['Karuhatan', 'Marulas', 'Paso de Blas', 'Malinta'],
   },
   {
@@ -222,7 +224,7 @@ export const locationDetails: LocationDetail[] = [
     city: 'Pateros',
     region: 'Metro Manila',
     summary: 'GENRO provides Malabanan septic siphoning, drain cleaning, and emergency plumbing support in Pateros.',
-    image: '/images/genro-malabanan-septic-cleaning.jpg',
+    image: assetPath('images/genro-malabanan-septic-cleaning.jpg'),
     nearbyAreas: ['Aguho', 'San Roque', 'Santa Ana', 'Magtanggol'],
   },
 ];

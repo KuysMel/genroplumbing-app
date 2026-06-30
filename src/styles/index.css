@@ -178,9 +178,7 @@ color:#ffb703;
 
 .hero{
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-url('/images/genro01.jpeg');
+background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65));
 background-size:cover;
 background-position:center;
 display:flex;
@@ -1139,9 +1137,7 @@ position:relative;
 min-height:100vh;
 height:auto;
 isolation:isolate;
-background:
-linear-gradient(90deg,rgba(0,8,20,0.86) 0%,rgba(0,29,61,0.74) 45%,rgba(0,0,0,0.34) 100%),
-url('/images/genro01.jpeg');
+background:linear-gradient(90deg,rgba(0,8,20,0.86) 0%,rgba(0,29,61,0.74) 45%,rgba(0,0,0,0.34) 100%);
 background-size:cover;
 background-position:center;
 padding-top:120px;
@@ -1361,9 +1357,7 @@ background:#ffffff;
 }
 
 .contact{
-background:
-linear-gradient(135deg,rgba(0,29,61,0.98),rgba(0,53,102,0.96)),
-url('/images/genro04.jpeg');
+background:linear-gradient(135deg,rgba(0,29,61,0.98),rgba(0,53,102,0.96));
 background-size:cover;
 background-position:center;
 box-shadow:var(--shadow-strong);

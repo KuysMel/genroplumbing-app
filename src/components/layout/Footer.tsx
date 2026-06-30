@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import { Phone, Mail } from 'lucide-react';
 import { siteContent } from '../../data/content';
+import { assetPath } from '../../lib/assets';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <img src="/logo.png" alt="GENRO Plumbing" className="w-64 h-64 mb-4 rounded-lg object-contain" />
+            <img src={assetPath('logo.png')} alt="GENRO Plumbing" className="w-64 h-64 mb-4 rounded-lg object-contain" />
             <h3 className="text-lg font-display font-bold text-[var(--text-primary)] mb-4">
               {siteContent.company.name}
             </h3>

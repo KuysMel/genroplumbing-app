@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { Home as HomeIcon, Menu, X } from 'lucide-react';
 import { serviceDetails } from '../data/services';
 import { locationDetails } from '../data/locations';
+import { assetPath } from '../lib/assets';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -33,22 +34,22 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const galleryImages = [
-    '/images/gallery/01.jpeg',
-    '/images/gallery/02.jpeg',
-    '/images/gallery/03.jpeg',
-    '/images/gallery/04.jpeg',
-    '/images/gallery/05.jpeg',
-    '/images/gallery/06.jpeg',
-    '/images/gallery/07.jpeg',
-    '/images/gallery/08.jpeg',
-    '/images/gallery/09.jpeg',
-    '/images/gallery/10.jpeg',
-    '/images/gallery/11.jpeg',
-    '/images/gallery/12.jpeg',
-    '/images/gallery/13.jpeg',
-    '/images/gallery/14.jpeg',
-    '/images/gallery/15.jpeg',
-    '/images/gallery/16.jpeg',
+    assetPath('images/gallery/01.jpeg'),
+    assetPath('images/gallery/02.jpeg'),
+    assetPath('images/gallery/03.jpeg'),
+    assetPath('images/gallery/04.jpeg'),
+    assetPath('images/gallery/05.jpeg'),
+    assetPath('images/gallery/06.jpeg'),
+    assetPath('images/gallery/07.jpeg'),
+    assetPath('images/gallery/08.jpeg'),
+    assetPath('images/gallery/09.jpeg'),
+    assetPath('images/gallery/10.jpeg'),
+    assetPath('images/gallery/11.jpeg'),
+    assetPath('images/gallery/12.jpeg'),
+    assetPath('images/gallery/13.jpeg'),
+    assetPath('images/gallery/14.jpeg'),
+    assetPath('images/gallery/15.jpeg'),
+    assetPath('images/gallery/16.jpeg'),
   ];
 
   useEffect(() => {
@@ -119,7 +120,7 @@ export default function Home() {
       {/* HEADER */}
       <header>
         <a href="/" className="logo" aria-label="Go to homepage">
-          <img src="/logo.png" alt="Genro Malabanan" className="logo-img" />
+          <img src={assetPath('logo.png')} alt="Genro Malabanan" className="logo-img" />
         </a>
 
         <nav className="desktop-nav">
@@ -146,7 +147,7 @@ export default function Home() {
 
       <aside className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`} aria-hidden={!isMobileMenuOpen}>
         <div className="mobile-menu-top">
-          <img src="/logo.png" alt="Genro Malabanan" className="mobile-menu-logo" />
+          <img src={assetPath('logo.png')} alt="Genro Malabanan" className="mobile-menu-logo" />
           <button
             type="button"
             className="mobile-close-button"
@@ -172,7 +173,13 @@ export default function Home() {
       </aside>
 
       {/* HERO */}
-      <section className="hero" id="home">
+      <section
+        className="hero"
+        id="home"
+        style={{
+          backgroundImage: `linear-gradient(90deg,rgba(0,8,20,0.86) 0%,rgba(0,29,61,0.74) 45%,rgba(0,0,0,0.34) 100%), url("${assetPath('images/genro01.jpeg')}")`,
+        }}
+      >
         <div className="hero-content">
           <h1>Professional Malabanan Siphoning Services</h1>
 
@@ -248,7 +255,7 @@ export default function Home() {
         <div className="about">
           <div>
             <img
-              src="/images/genro01.jpeg"
+              src={assetPath('images/genro01.jpeg')}
               alt="About GENRO MALABANAN"
             />
           </div>
@@ -610,7 +617,12 @@ export default function Home() {
 
       {/* CONTACT */}
       <section id="contact">
-        <div className="contact">
+        <div
+          className="contact"
+          style={{
+            backgroundImage: `linear-gradient(135deg,rgba(0,29,61,0.98),rgba(0,53,102,0.96)), url("${assetPath('images/genro04.jpeg')}")`,
+          }}
+        >
           <h2>Contact GENRO MALABANAN</h2>
 
           <p>

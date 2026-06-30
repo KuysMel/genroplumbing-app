@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
+import { assetPath } from '../../lib/assets';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src="/logo.png" alt="GENRO Plumbing" className="w-16 h-16 p-1 object-contain" />
+            <img src={assetPath('logo.png')} alt="GENRO Plumbing" className="w-16 h-16 p-1 object-contain" />
             <div className="hidden sm:block">
               <div className="font-display text-lg font-bold text-[var(--text-primary)]">GENRO</div>
               <div className="text-xs font-semibold text-[var(--accent-green)]">Plumbing</div>

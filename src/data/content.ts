@@ -1,3 +1,5 @@
+import { assetPath } from '../lib/assets';
+
 export const siteContent = {
   // Company Info
   company: {
@@ -152,19 +154,19 @@ export const siteContent = {
       name: 'Maria Santos',
       designation: 'Septic Tank Cleaning - Manila',
       quote: 'GENRO came to our home in Makati on short notice and fixed our septic issue immediately. Professional, courteous, and very efficient. Highly recommended!',
-      src: '/images/genro01.jpeg',
+      src: assetPath('images/genro01.jpeg'),
     },
     {
       name: 'Juan dela Cruz',
       designation: 'De-Clogging Service - Quezon City',
       quote: 'Had a severe drain blockage in our condo unit. GENRO fixed it within 30 minutes without any mess. Outstanding service and fair pricing.',
-      src: '/images/genro02.jpeg',
+      src: assetPath('images/genro02.jpeg'),
     },
     {
       name: 'Rosa Mercado',
       designation: 'Siphoning Service - Nueva Ecija',
       quote: 'Trusted GENRO for our septic siphoning for over a year. Always punctual, professional, and they never compromise on quality.',
-      src: '/images/genro03.jpeg',
+      src: assetPath('images/genro03.jpeg'),
     },
   ],
 

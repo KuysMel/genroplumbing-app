@@ -1,12 +1,13 @@
 import { ExpandableGallery } from '@/components/ui/gallery-animation';
+import { assetPath } from '../lib/assets';
 
 export default function GalleryDemo() {
   const images = [
-    '/images/genro01.jpeg',
-    '/images/genro02.jpeg',
-    '/images/genro03.jpeg',
-    '/images/genro04.jpeg',
-    '/images/genro05.jpeg',
+    assetPath('images/genro01.jpeg'),
+    assetPath('images/genro02.jpeg'),
+    assetPath('images/genro03.jpeg'),
+    assetPath('images/genro04.jpeg'),
+    assetPath('images/genro05.jpeg'),
   ];
 
   return (
