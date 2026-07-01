@@ -5,13 +5,9 @@
     <title>GENRO Plumbing Services</title>
     <script>
       var l = window.location;
-      var repo = '/genroplumbing-app';
-      var path = l.pathname.indexOf(repo + '/') === 0
-        ? l.pathname.slice(repo.length + 1)
-        : l.pathname.slice(1);
+      var path = l.pathname.slice(1);
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        repo +
         '/?p=/' + path.replace(/&/g, '~and~') +
         (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash

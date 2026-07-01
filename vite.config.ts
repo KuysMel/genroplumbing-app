@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
-  base: mode === 'github' ? '/genroplumbing-app/' : '/',
+  base: '/',
   resolve: {
     alias: {
       '@': '/src',
